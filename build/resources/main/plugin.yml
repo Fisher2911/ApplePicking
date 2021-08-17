@@ -1,0 +1,16 @@
+name: ApplePicking
+main: me.masterofthefish.applepicking.ApplePicking
+version: 1.0.0
+api-version: 1.16
+author: MasterOfTheFish
+commands:
+  applepicking:
+    aliases: [ap, apick, apicking]
+    description: Base apple picking command
+permissions:
+  applepicking.admin:
+    default: op
+  applepicking.place:
+    default: op
+  applepicking.break:
+    default: op

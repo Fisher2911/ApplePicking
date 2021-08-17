@@ -1,0 +1,14 @@
+# Author: MasterOfTheFish
+
+# Delete this to get back the default messages
+
+# Use %cooldown% to display the cooldown time left
+wait-for-cooldown: "You must wait %cooldown% to collect from this apple again!"
+# Use %player% to display the player who attempted to pick an invalid apple
+invalid-apple-error: "[ApplePicking] Warning: %player% attempted to pick an invalid apple"
+# Use %apple-id% to see the apple id
+placed-apple: "You placed apple %apple-id%"
+# Use %apple-id% to see the apple id
+removed-apple: "You removed apple %apple-id%"
+# No Placeholders
+no-permission: "You do not have permission to do this!"
