@@ -10,6 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class AppleItem {
 
@@ -42,9 +43,8 @@ public class AppleItem {
             Bukkit.getConsoleSender().sendMessage(Messages.invalidAppleErrorMessage(player));
             return;
         }
-        final Random random = new Random();
         final ItemStack clone = dropItem.clone();
-        clone.setAmount(random.nextInt(maxDrops + 1 - minDrops) + minDrops);
+        clone.setAmount(ThreadLocalRandom.current().nextInt(maxDrops + 1 - minDrops) + minDrops);
         world.dropItemNaturally(blockUnder, clone);
         final Cooldown cooldown = cooldowns.get(appleLocation);
         cooldown.setPlayerCooldown(player);
